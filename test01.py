@@ -8,7 +8,6 @@ def MakeList():
     for i in range(MAX_SIZE):
         list_num = int(input("List[{}] num >>".format(i)))
         list.insert(i, list_num)
-        
     ListAnaly(list)
 
 def ListAnaly(list):
