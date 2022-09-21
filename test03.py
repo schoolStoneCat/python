@@ -5,11 +5,12 @@ def MakeList():
     
     for i in range(list_max):
         list[i] = int(input("list[{}] value >>".format(i)))
+        print("list value >>{}".format(list))
         
-        for j in range(list_max):
-            while(list[j] != 0 & list[j] == list[i]):
-                print("ERROR >> Same num is exit plz Insert num again")
-                list[i] = int(input("list{} value >>".format(i)))
+        # FIXME : 중복 체크 안됨
+        while list[i] in list:
+            print("ERROR >> Same num is exit in list plz Insert num again")
+            list[i] = int(input("list{} value >>".format(i)))
                 
     print("Finish Value in List")
     
@@ -18,7 +19,7 @@ def MakeList():
 def EvenList(list):
     result_list = []
     
-    for i in range(len(list)):
+    for i in len(list):
         if(list[i] % 2 == 0):
             result_list.append(list[i])
     
@@ -27,7 +28,7 @@ def EvenList(list):
 def OddList(list):
     result_list = []
     
-    for i in range(len(list)):
+    for i in len(list):
         if(list[i] % 2 != 0):
             result_list.append(list[i])
             
