@@ -6,5 +6,4 @@ def numAnaly(x):
     print(x, " 는 소수가 맞습니다.")
 
 x = int(input("num >>"))
-
 numAnaly(x)
