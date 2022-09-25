@@ -1,7 +1,6 @@
 def MakeList():
     list_max = int(input("List Max >>"))
-    list = [0 for i in range(list_max)]
-    print("//Finish 0 in List\n")
+    list = []
     
     for i in range(list_max):
         num = int(input("list[{}] value >>".format(i)))
@@ -9,7 +8,7 @@ def MakeList():
         while num in list:
             print("//ERROR >> Same num is exit in list plz Insert num again")
             num = int(input("list[{}] value >>".format(i)))        
-        list[i] = num
+        list.append(num)
         print("list value >> {}".format(list))
                 
     print("//Finish Value in List")   
