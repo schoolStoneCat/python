@@ -15,23 +15,12 @@ def MakeList():
     return list
 
 def EvenList(list):
-    result_list = []
-    
-    for i in range(0, len(list)):
-        if(list[i] % 2 == 0):
-            result_list.append(list[i])
     print("//Finish Analysis Even value")
-    return result_list
+    return [ x for x in list if x%2 == 0 ]
 
 def OddList(list):
-    result_list = []
-    
-    for i in range(0, len(list)):
-        if(list[i] % 2 != 0):
-            result_list.append(list[i])
-    
     print("//Finish Analysis Odd value")  
-    return result_list
+    return [ x for x in list if x%2 == 1 ]
 
 def AscendingList(result_list: list):
     for i in range(len(result_list)):
