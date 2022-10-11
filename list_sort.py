@@ -5,9 +5,7 @@ def MakeList():
     for i in range(list_max):
         num = int(input("list[{}] value >>".format(i)))
         
-        while num in list:
-            print("//ERROR >> Same num is exit in list plz Insert num again")
-            num = int(input("list[{}] value >>".format(i)))        
+        ##FIXME: 리스트 내에 숫자가 있는지 확인하는 코드 추가       
         list.append(num)
         print("list value >> {}".format(list))
                 
