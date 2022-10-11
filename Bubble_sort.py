@@ -1,10 +1,23 @@
+import random
+
 def bsort(list):
     for i in range(0,len(list)-1):
         for j in range(0,len(list)-1):
             if(list[j] > list[j + 1]):
                 list[j], list[j + 1] = list[j + 1], list[j]
+    
+    return list
 
-list = [2, 5, 1, 9, 8, 4, 3, 7, 6]
+def list_random():
+    list = []
+    
+    for i in range(9):
+        num = random.randint(1,10)
+        
+        while num in list:
+            num = int(random.randint(1,9))
+        list.append(num)
 
-bsort(list)
-print("Bubble sort list >> {}".format(list))
+    return list
+
+print("Bubble sort list >> {}".format(bsort(list_random())))
