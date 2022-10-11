@@ -7,4 +7,4 @@ def bsort(list):
 list = [2, 5, 1, 9, 8, 4, 3, 7, 6]
 
 bsort(list)
-print("{}".format(list))
+print("Bubble sort list >> {}".format(list))

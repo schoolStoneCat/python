@@ -29,6 +29,7 @@ def ListAnaly(list):
     print("you must buy in {} and sell in {}".format(element_min, element_max))
     print("then you can buy best price {}".format(result))
     
+    print("Start time is {}".format(start_time))
     print("Lastly time is {}".format(end_time))
     print("Analysis Time is {}".format(end_time - start_time))
 
