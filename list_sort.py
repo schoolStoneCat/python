@@ -5,7 +5,9 @@ def MakeList():
     for i in range(list_max):
         num = int(input("list[{}] value >>".format(i)))
         
-        ##FIXME: 중복되는 값을 간별하는 코드를 추가하라. 
+        while num in list:
+            print("//ERROR >> This num is already in list.\n")
+            num = int(input("list[{}] value >>".format(i))) 
         list.append(num)
         print("list value >> {}".format(list))
                 
