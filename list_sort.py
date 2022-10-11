@@ -5,9 +5,16 @@ def MakeList():
     for i in range(list_max):
         num = int(input("list[{}] value >>".format(i)))
         
+
         while num in list:
             print("//ERROR >> This num is already in list.\n")
-            num = int(input("list[{}] value >>".format(i))) 
+            num = int(input("list[{}] value >>".format(i)))
+           
+        #This code is not good 
+        #if num in list:
+        #    print("//ERROR >> this num is already in list.\n")
+        #    num = int(input("list[{}] value >>".format(i))
+        
         list.append(num)
         print("list value >> {}".format(list))
                 
