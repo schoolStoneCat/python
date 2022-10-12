@@ -10,7 +10,7 @@ def MakeList():
             print("//ERROR >> This num is already in list.\n")
             num = int(input("list[{}] value >>".format(i)))
            
-        #This code is not good 
+        #This code is not good because it will check num just one time
         #if num in list:
         #    print("//ERROR >> this num is already in list.\n")
         #    num = int(input("list[{}] value >>".format(i))

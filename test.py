@@ -1,6 +1,5 @@
 from unittest import result
 
-
 def testdef(num):
     print("//{} start".format(num))
     
