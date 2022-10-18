@@ -1,28 +1,43 @@
 import random
 
-def MakeList():
-    list_max = int(input("List Max >>"))
-    list = []
-    
-    for i in range(list_max):
-        num = int(input("list[{}] value >>".format(i)))
+def Make_list(list):
+    MAX_num = int(input("Insert Max num >>"))
+    for i in range(1, MAX_num+1):
+        list.append(i)
         
-        while num in list:
-            print("//ERROR >> Same num is exit in list plz Insert num again")
-            num = int(input("list[{}] value >>".format(i)))        
-        list.append(num)
-        print("list value >> {}".format(list))
-                
-    print("//Finish Value in List")   
-    return list
+    random.shuffle(list)
 
-def QuickSort(result_sort: list):
-    int list_middle = random.randint(list)
-    int i = 0
-    int j =  len(list)
-    
-    while(j < i) {
+    print("//List >> {}".format(list))
+    if len(list) == MAX_num:
+        return list
+    else:
+        print("//ERROR >> list error.")
+        return 0
         
-    }
+def list_Quicksort(list):
+    if list != 0:
+        if len(list) <= 1:
+            print("//Success sort List.")
+            return list
+        pivot = random.choice(list)
+        front_list, pivot_list, lastly_list = [], [], []
+        
+        for num in list:
+            if(num < pivot):
+                front_list.append(num)
+            elif(num > pivot):
+                lastly_list.append(num)
+            else:
+                pivot_list.append(num)
+                
+        return list_Quicksort(front_list) + pivot_list + list_Quicksort(lastly_list)
+    else:
+        print("//ERROR >> list Make error.")
+        return 0
+        
+list = []
+list = list_Quicksort(Make_list(list))
+
+print("List >> {}".format(list))
     
     
