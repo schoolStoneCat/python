@@ -34,7 +34,7 @@ def list_Quicksort(list):
     else:
         print("//ERROR >> list Make error.")
         return 0
-        
+
 list = []
 list = list_Quicksort(Make_list(list))
 
