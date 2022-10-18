@@ -12,12 +12,9 @@ def list_random():
     list = []
     
     for i in range(9):
-        num = random.randint(1,10)
+        list.append(i)
         
-        while num in list:
-            num = int(random.randint(1,9))
-        list.append(num)
-
+    random.shuffle(list)
     return list
 
 print("Bubble sort list >> {}".format(bsort(list_random())))
