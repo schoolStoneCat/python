@@ -39,5 +39,3 @@ list = []
 list = list_Quicksort(Make_list(list))
 
 print("List >> {}".format(list))
-    
-    
