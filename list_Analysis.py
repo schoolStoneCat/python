@@ -1,4 +1,5 @@
 import math
+import random
 import time
 
 def MakeList():
@@ -6,9 +7,9 @@ def MakeList():
     list = []
         
     for i in range(MAX_SIZE):
-        list_num = int(input("List[{}] num >>".format(i)))
-        list.insert(i, list_num)
-    ListAnaly(list)
+        list.append(random.randint(1,100))
+        
+    return list
 
 def ListAnaly(list):
     start_time = time.process_time()
@@ -33,4 +34,4 @@ def ListAnaly(list):
     print("Lastly time is {}".format(end_time))
     print("Analysis Time is {}".format(end_time - start_time))
 
-MakeList()
+ListAnaly(MakeList())

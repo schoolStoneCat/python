@@ -23,7 +23,7 @@ def MakeList():
 
 def EvenList(list):
     print("//Finish Analysis Even value")
-    return [ x for x in list if x%2 == 0 ]
+    return [ x for x in list if x%2 == 0 and x != 0 ]
 
 def OddList(list):
     print("//Finish Analysis Odd value")  
