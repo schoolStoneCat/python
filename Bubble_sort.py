@@ -12,7 +12,7 @@ def list_random():
     list = []
     
     for i in range(9):
-        list.append(i)
+        list.append(i) 
         
     random.shuffle(list)
     return list
