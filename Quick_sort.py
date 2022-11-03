@@ -11,7 +11,7 @@ def Make_list(list):
     if len(list) == MAX_num:
         return list
     else:
-        print("//ERROR >> list error.")
+        print("//ERROR >> list MAX size error.")
         return 0
         
 def list_Quicksort(list):
