@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 import pickle
 import re
 import os.path
@@ -81,4 +79,4 @@ def main():
     
 if __name__ == "__main__":
     main()
->>>>>>> Stashed changes
+
