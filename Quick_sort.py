@@ -13,7 +13,7 @@ def Make_list(list):
     #for i in range(list_max):
     #    num = int(input("list[{}] value >>".format(i)))
         
-    #random.shuffle(list)
+    random.shuffle(list)
 
     print("//List >> {}".format(list))
     if len(list) == MAX_num:
